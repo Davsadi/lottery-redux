@@ -11,7 +11,7 @@ const root = path.resolve(__dirname, 'relativePath');
 // });
 
 
-app.use(express.static(path.resolve(root, 'lottery')));
+app.use(express.static(path.resolve(root, '/lottery')));
 
 app.listen(port);
 console.log('Server started');
