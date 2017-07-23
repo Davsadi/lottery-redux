@@ -25,9 +25,6 @@ sub2.get("/", function(req, res){
 
 // main app
 // --------
-
-var app = express();
-
 app.use("/lottery", sub2);
 app.use("/", sub1);
 
