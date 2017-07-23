@@ -50,7 +50,7 @@ class NewNumbers extends Component {
                     component={this.renderField}
                 />
                 <button type="submit" className="btn btn-primary">Submit</button>
-                <Link to="/" className="btn btn-danger">Cancel</Link>
+                <Link to="/lottery" className="btn btn-danger">Cancel</Link>
             </form>
         );
     }

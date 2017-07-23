@@ -54,7 +54,7 @@ class LotteryIndex extends Component {
     render() {
         return (
             <div className="row">
-                <div className="top-div">Lottery Draws <Link className="btn btn-secondary btn-sm btn-float" to="/add">Add New</Link></div>
+                <div className="top-div">Lottery Draws <Link className="btn btn-secondary btn-sm btn-float" to="/lottery/add">Add New</Link></div>
                 <table className="table table-hover table-bordered">
                     <thead>
                         <tr className="header-row">

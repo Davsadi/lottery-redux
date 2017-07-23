@@ -86,7 +86,7 @@ svg {
     float:left;
     width: 29px;
     line-height: 25px;
-    background: url(/img/white-ball-sm.png) no-repeat;
+    background: url(/lottery/img/white-ball-sm.png) no-repeat;
     padding: 1px 3px 3px 3px;
     margin: 0 8px 0 0;
     text-align: center;
@@ -101,7 +101,7 @@ svg {
     float:left;
     width: 29px;
     line-height: 25px;
-    background: url(/img/red-ball-sm.png) no-repeat;
+    background: url(/lottery/img/red-ball-sm.png) no-repeat;
     padding: 1px 2px 3px 3px;
     /*margin: 0 0 0 8px;*/
     text-align: center;
