@@ -1,6 +1,62 @@
-td, th {
+body {
+    background-color: #242424 !important;
+}
+
+th {
     vertical-align: middle !important;
     text-align: center !important;
+}
+
+td {
+    vertical-align: middle !important;
+    text-align: left;
+}
+
+.top-div {
+    margin: 1rem;
+    font-size: 1.75rem;
+    text-align: center;
+    color: #FCFEF5;
+}
+
+.btn-float {
+    float:right;
+    margin-top: 6px;
+}
+
+.header-row {
+    background-color: #3B3B3B;
+    color: #FCFEF5;
+}
+
+.matched-cell-div {
+    /*line-height: 60px;*/
+    /*padding: 10px 0px;*/
+    font-size: 14px;
+    padding-left: 10px;
+    /*min-height: 45px;*/
+}
+
+.numbers-cell {
+    width: 266px;
+    text-align: center;
+}
+
+.draw-cell {
+    width: 266px;
+    text-align: center;
+}
+
+.fa-thumbs-up {
+    color: gold;
+    float:left;
+    margin-top: -14px;
+    /*font-size: 40px;*/
+    /*height: 10px;*/
+}
+
+.fa-thumbs-down {
+    color: gray;
 }
 
 .input-group {
@@ -11,7 +67,54 @@ svg {
     height: 150px;
 }
 
-td:first-of-type, td:first-of-type > div {
-    height: 200px;
-    width: 250px;
+.winners {
+    list-style: none;
+    float:left;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 5px 3px 5px;
+    margin: -3px 5px 0 5px;
+    border: 1px solid gold;
+    border-radius: 6px;
+    min-width: 70px;
+    text-align: center;
+    background-color: #FDFAF5;
+}
+
+.numbers-float {
+    list-style: none;
+    float:left;
+    width: 29px;
+    line-height: 25px;
+    background: url(/img/white-ball-sm.png) no-repeat;
+    padding: 1px 3px 3px 3px;
+    margin: 0 8px 0 0;
+    text-align: center;
+    margin-right: 0;
+    font-weight: bold;
+    color: #031634;
+    font-size: 14px;
+}
+
+.bonus-number {
+    list-style: none;
+    float:left;
+    width: 29px;
+    line-height: 25px;
+    background: url(/img/red-ball-sm.png) no-repeat;
+    padding: 1px 2px 3px 3px;
+    /*margin: 0 0 0 8px;*/
+    text-align: center;
+    color: #FFF;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.add-new-form {
+    color: #FCFEF5;
+}
+
+form a {
+    margin-left: 10px;
 }
