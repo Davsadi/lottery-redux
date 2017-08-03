@@ -4,11 +4,9 @@ import LotteryReducer from './reducer_lottery';
 import LotteryReducerNumbers from './reducer_lottery_numbers';
 
 const rootReducer = combineReducers({
-  lottery: LotteryReducer,
-  lotteryNumbers: LotteryReducerNumbers,
-  form: formReducer
+    lottery: LotteryReducer,
+    lotteryNumbers: LotteryReducerNumbers,
+    form: formReducer
 });
-
-
 
 export default rootReducer;

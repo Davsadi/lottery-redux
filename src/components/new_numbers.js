@@ -7,23 +7,29 @@ import { createLotteryNumbers } from '../actions';
 class NewNumbers extends Component {
     renderField(field) {
         const { meta: { touched, error } } = field;
-        const className = `add-new-form form-group ${touched && error ? 'has-danger' : ''}`;
+        const className = `add-new-form form-group ${touched && error
+            ? 'has-danger'
+            : ''}`;
         return (
             <div className={className}>
-                <label>{field.label}</label>
+                <label>
+                    {field.label}
+                </label>
                 <input
                     className="form-control"
                     type={field.type}
                     {...field.input}
                 />
-                <div className="text-help">{touched ? error : ''}</div>
+                <div className="text-help">
+                    {touched ? error : ''}
+                </div>
             </div>
         );
     }
 
     onSubmit(values) {
-        values.standardNumbers = values.standardNumbers.split(",");
-        values.gameType = "SuperLotto Plus";
+        values.standardNumbers = values.standardNumbers.split(',');
+        values.gameType = 'SuperLotto Plus';
         this.props.createLotteryNumbers(values);
     }
 
@@ -49,8 +55,13 @@ class NewNumbers extends Component {
                     type="text"
                     component={this.renderField}
                 />
-                <button type="submit" className="btn btn-primary">Submit</button>
-                <Link to="/lottery" className="btn btn-danger">Cancel</Link>
+                <button type="submit" className="btn btn-primary">
+                    Submit
+                </button>
+                <Link to="/lottery;
+" className="btn btn-danger">
+                    Cancel
+                </Link>
             </form>
         );
     }
@@ -59,13 +70,13 @@ class NewNumbers extends Component {
 function validate(values) {
     const errors = {};
     if (!values.standardNumbers) {
-        errors.standardNumbers = "Enter the standard numbers!";
+        errors.standardNumbers = 'Enter the standard numbers!';
     }
     if (!values.bonusNumber) {
-        errors.bonusNumber = "Enter the bonus number!";
+        errors.bonusNumber = 'Enter the bonus number!';
     }
     if (!values.drawDate) {
-        errors.drawDate = "Enter the draw date!";
+        errors.drawDate = 'Enter the draw date!';
     }
     // If errors is empty, form will submit
     return errors;
@@ -74,6 +85,4 @@ function validate(values) {
 export default reduxForm({
     validate,
     form: 'NewNumbersForm'
-})(
-    connect(null,{ createLotteryNumbers })(NewNumbers)
-);
+})(connect(null, { createLotteryNumbers })(NewNumbers));
