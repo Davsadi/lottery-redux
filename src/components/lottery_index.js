@@ -22,7 +22,6 @@ class LotteryIndex extends Component {
             const standardNumbersHTML = standardNumbers.replace(/,/g, "</li><li class='numbers-float'>");
             const winnersList = lottery.myWinners.toString();
             let winnersTest = winnersList.replace(/,/g, "");
-            console.log(lottery.drawDate + ': ' + winnersTest);
             let rowColor = "";
             let winnersListHTML = "";
             if (winnersTest != "") {
