@@ -58,8 +58,7 @@ class NewNumbers extends Component {
                 <button type="submit" className="btn btn-primary">
                     Submit
                 </button>
-                <Link to="/lottery;
-" className="btn btn-danger">
+                <Link to="/lottery" className="btn btn-danger">
                     Cancel
                 </Link>
             </form>
