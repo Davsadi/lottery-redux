@@ -21,10 +21,11 @@ class LotteryIndex extends Component {
             const standardNumbers = lottery.standardNumbers.toString();
             const standardNumbersHTML = standardNumbers.replace(/,/g, "</li><li class='numbers-float'>");
             const winnersList = lottery.myWinners.toString();
-            console.log(lottery.drawDate + ': ' +lottery.myWinners);
+            let winnersTest = winnersList.replace(/,/g, "");
+            console.log(lottery.drawDate + ': ' + winnersTest);
             let rowColor = "";
             let winnersListHTML = "";
-            if (lottery.myWinners.length > 0) {
+            if (winnersTest != "") {
                 winnersListHTML = "<div class='matched-cell-div'><i class='fa fa-thumbs-up fa-3x' aria-hidden='true'></i><ul><li class='winners'>" + winnersList.replace(/,/g, "</li><li class='winners'>") + "</li>" + sTest + "</ul></div>";
                 winnersListHTML = winnersListHTML.replace(/<li class=\'winners\'>, <\/li>/g, "");
                 winnersListHTML = winnersListHTML.replace(/<li class=\'winners\'><\/li>/g, "");
