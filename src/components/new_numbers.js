@@ -7,22 +7,18 @@ import { createLotteryNumbers } from '../actions';
 class NewNumbers extends Component {
     renderField(field) {
         const { meta: { touched, error } } = field;
-        const className = `add-new-form form-group ${touched && error
-            ? 'has-danger'
-            : ''}`;
+        const className = `add-new-form form-group ${
+            touched && error ? 'has-danger' : ''
+        }`;
         return (
             <div className={className}>
-                <label>
-                    {field.label}
-                </label>
+                <label>{field.label}</label>
                 <input
                     className="form-control"
                     type={field.type}
                     {...field.input}
                 />
-                <div className="text-help">
-                    {touched ? error : ''}
-                </div>
+                <div className="text-help">{touched ? error : ''}</div>
             </div>
         );
     }
@@ -58,7 +54,7 @@ class NewNumbers extends Component {
                 <button type="submit" className="btn btn-primary">
                     Submit
                 </button>
-                <Link to="/lottery" className="btn btn-danger">
+                <Link to="/" className="btn btn-danger">
                     Cancel
                 </Link>
             </form>

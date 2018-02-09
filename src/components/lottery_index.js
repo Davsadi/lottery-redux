@@ -89,7 +89,7 @@ class LotteryIndex extends Component {
                     Lottery Draws{' '}
                     <Link
                         className="btn btn-secondary btn-sm btn-float"
-                        to="/lottery/add"
+                        to="/add"
                     >
                         Add New
                     </Link>
@@ -102,9 +102,7 @@ class LotteryIndex extends Component {
                             <th>Matched Numbers</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        {this.renderLottery()}
-                    </tbody>
+                    <tbody>{this.renderLottery()}</tbody>
                 </table>
             </div>
         );
