@@ -16,8 +16,8 @@ ReactDOM.render(
         <BrowserRouter>
             <div>
                 <Switch>
-                    <Route path="/lottery/add" component={NewNumbers} />
-                    <Route path="/lottery" component={LotteryIndex} />
+                    <Route path="/add" component={NewNumbers} />
+                    <Route path="/" component={LotteryIndex} />
                 </Switch>
             </div>
         </BrowserRouter>
