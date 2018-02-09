@@ -1,15 +1,15 @@
 import axios from 'axios';
 
 const BEARER =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5NGFmMjk4ZjMzNGEzMmUzOWM1NmE0OCIsImlhdCI6MTQ5ODA4NDAwMSwiZXhwIjoxNTAwNjc2MDAxfQ.beRPMB4vOrSpzLG2MFdNM-usVoUxjdOx6FPPS7ZFcBs';
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhN2QzNjQxNmY1NTc4Nzc2NTlhZTFlYyIsImlhdCI6MTUxODE1NTM0MCwiZXhwIjoxNTIwNzQ3MzQwfQ.3vGFzA_rVSz1ajjq7fN9DwLreNWLvORrG7kO2Mg8F5Q';
 const HEADERS = {
     headers: {
         Authorization:
-            'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5NGFmMjk4ZjMzNGEzMmUzOWM1NmE0OCIsImlhdCI6MTUwMDc1ODY0MSwiZXhwIjoxNTAzMzUwNjQxfQ.S5kDqS5zt5xuM_EFJpWTXY4Xthiv_Mnr-zDD5_uXln8',
+            'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhN2QzNjQxNmY1NTc4Nzc2NTlhZTFlYyIsImlhdCI6MTUxODE1NTM0MCwiZXhwIjoxNTIwNzQ3MzQwfQ.3vGFzA_rVSz1ajjq7fN9DwLreNWLvORrG7kO2Mg8F5Q',
         'Content-Type': 'application/json'
     }
 };
-const ROOT_URL = `https://apps.dferguson.com/api/lottery/v1`;
+const ROOT_URL = `https://lottery.dferguson.com/api/lottery/v1`;
 
 export const FETCH_LOTTERY = 'FETCH_LOTTERY';
 export const FETCH_LOTTERY_NUMBERS = 'FETCH_LOTTERY_NUMBERS';
